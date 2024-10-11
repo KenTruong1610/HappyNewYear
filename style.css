@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(0, 5, 41 ,1);
+}
+
+.city {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  z-index: 100;
+  z-index: 10;
+}
+
+.city img {
+  width: 100%;
+}
+
+#labels,
+
+#extra {
+
+  color: #daf6ff;
+  text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10, 175, 230, 0);
+  font-weight: bold;
+  font-size: 3.8rem;
+  position: fixed;
+  width: 100vw;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  z-index: 100;
+  top: 30%;
+}
+
+#labels.hide {
+  opacity: 0;
+  transform: scale(1);
+}
+
+#labels.show,
+
+#extra.show {
+  opacity: 1;
+  z-index: 100;
+  transform: scale(1.3);
+}
